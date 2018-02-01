@@ -23,9 +23,9 @@ function openNav() {
 }
 // Google maps
 function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var myCenter = new google.maps.LatLng(51.508742,-0.120850); 
-  var mapOptions = {center: myCenter, zoom: 20};
+  var mapCanvas = document.getElementById("googleMap");
+  var myCenter = new google.maps.LatLng(-33.9589855,22.4542503); 
+  var mapOptions = {center: myCenter, zoom: 15};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
