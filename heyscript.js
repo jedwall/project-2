@@ -22,21 +22,18 @@ function openNav() {
     }
 }
 // Google maps
-function myMap()
-{
-  myCenter=new google.maps.LatLng(-33.9589855,22.4542503);
-  var mapOptions= {
-    center:myCenter,
-    zoom:5, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850); 
+  var mapOptions = {center: myCenter, zoom: 20};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
+    animation: google.maps.Animation.BOUNCE
   });
   marker.setMap(map);
 }
+
     // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "block";
