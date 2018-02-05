@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-   <head>
+   <header>
       <title>Jedwall Design</title>
       <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="heyScript.js"></script>
-   </head>
+   </header>
    <body id="myPage">
       <!-- Sidebar on click -->
       <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
@@ -19,7 +17,7 @@
          <a href="options.html" class="w3-bar-item w3-button">Options CC</a>
          <a href="ks.html" class="w3-bar-item w3-button">Koyi Security</a>
          <a href="index.html" class="w3-bar-item w3-button">Jedwall Design</a>
-         <a href="ac.html" class="w3-bar-item w3-button">Africa Cares</a>
+         <a href="africacares.html" class="w3-bar-item w3-button">Africa Cares</a>
          <a href="od.html" class="w3-bar-item w3-button">Other Designs</a>
       </nav>
       <!-- Navbar -->
@@ -27,7 +25,7 @@
          <div class="w3-bar w3-theme-d2 w3-left-align">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
             <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Jedwall Design</a>
-            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">OCC</a>
             <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
             <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
@@ -52,57 +50,75 @@
       </div>
       <!-- Image Header -->
       <div class="w3-display-container w3-animate-opacity">
-         <img src="images/backgrounds/hey.jpg" alt="tree1" style="width:100%;min-height:350px;max-height:600px;">
+         <img src="images/backgrounds/water2.jpg" alt="tree1" style="width:100%;min-height:350px;max-height:600px;">
          <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
             <a href="index.html"><img src="images/backgrounds/jd5.png" style="width:80%;height:80%"></a>
          </div>
       </div>
-      <!-- Modal -->
-      <div id="id01" class="w3-modal">
-         <div class="w3-modal-content w3-card-4 w3-animate-top">
-            <header class="w3-container w3-teal w3-display-container">
-               <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-               <h4>Oh snap! We just showed you a modal..</h4>
-               <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-            </header>
-            <div class="w3-container">
-               <p>Cool huh? Ok, enough teasing around..</p>
-               <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-            </div>
-            <footer class="w3-container w3-teal">
-               <p>Modal footer</p>
-            </footer>
-         </div>
-      </div>
-      <!-- Team Container -->
+      <!-- Options Care Center Portfolio -->
       <div class="w3-container w3-padding-64 w3-center" id="team">
-         <h2>OUR TEAM</h2>
-         <p>Meet the team:</p>
-         <div class="w3-row">
-            <br>
-            <div class="w3-quarter">
-               <img src="images/index_images/jace.jpg" alt="Owner" style="width:45%" class="w3-circle w3-hover-opacity">
-               <h3>Jason Edwall</h3>
-               <p>Graphic Designer & Web/ Code Designer</p>
+         <h2>Options Care Centre</h2>
+         <p>See the work:</p>
+         <div class="row">
+            <div class="column">
+               <img src="images/options_images/occbrochure.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+               <h3>Brochure</h3>
+               <p>This one was completed in 2017</p>
             </div>
-            <div class="w3-quarter">
-               <img src="images/index_images/naboth2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-               <h3>Naboth Mavu</h3>
-               <p>Wordpress Designer</p>
+            <div class="column">
+               <img src="images/options_images/bcard1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+               <h3>Business Cards</h3>
+               <p>For Amacici Jewelery</p>
             </div>
-            <div class="w3-quarter">
-               <img src="images/index_images/snoopy.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-               <h3>Jan Ringo</h3>
-               <p>Support1</p>
+            <div class="column">
+               <img src="images/options_images/occbmedia.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+               <h3>Banquet Media</h3>
+               <p>Options every year needs new graphics for their banquet, which I provide.</p>
             </div>
-            <div class="w3-quarter">
-               <img src="images/index_images/donald.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-               <h3>Sonshine</h3>
-               <p>Secretary</p>
+            <div class="column">
+               <img src="images/options_images/people.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+               <h3>Photography</h3>
+               <p>A few different jobs, here and there.</p>
             </div>
          </div>
       </div>
-      </div>
+      <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">1 / 4</div>
+               <img src="images/options_images/occbrochure.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">2 / 4</div>
+               <img src="images/options_images/bcard1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">3 / 4</div>
+               <img src="images/options_images/occbmedia.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">4 / 4</div>
+               <img src="images/options_images/people.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/options_images/occbrochure.jpg" style="width:100%; height:200px;" onclick="currentSlide(1)" alt="Options Brochure 2017">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/options_images/bcard1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Amacici Business Cards">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/options_images/occbmedia.jpg" style="width:100%" onclick="currentSlide(3)" alt="Banquet Media">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/options_images/people.jpg" style="width:100%" onclick="currentSlide(4)" alt="Photography">
+            </div>
+         </div>
       </div>
       <!-- Work Row -->
       <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
@@ -112,7 +128,7 @@
          </div>
          <div class="w3-quarter">
             <div class="w3-card w3-white">
-               <a href="options.html"><img src="images/options_images/num1.jpg" alt="options" style="width:100%"></a>
+               <a href="options.html"><img src="images/options_images/num1.jpg" alt="Vernazza" style="width:100%"></a>
                <div class="w3-container">
                   <h3>Options Care Centre</h3>
                   <h4>Graphic Design</h4>
@@ -125,7 +141,7 @@
          </div>
          <div class="w3-quarter">
             <div class="w3-card w3-white">
-               <a href="ks.html"><img src="images/ks_images/num2.jpg" alt="koyisecurity" style="width:100%"></a>
+               <a href="ks.html"><img src="images/ks_images/num2.jpg" alt="Cinque Terre" style="width:100%"></a>
                <div class="w3-container">
                   <h3>Koyi Security</h3>
                   <h4>Graphic Design</h4>
@@ -138,7 +154,7 @@
          </div>
          <div class="w3-quarter">
             <div class="w3-card w3-white">
-               <a href="jd.html"><img src="images/jd_images/num3.jpg" alt="jedwall design" style="width:100%"></a>
+               <a href="jd.html"><img src="images/jd_images/num3.jpg" alt="Monterosso" style="width:100%"></a>
                <div class="w3-container">
                   <h3>Jedwall Design</h3>
                   <h4>Web Design/ Graphic Design</h4>
@@ -215,62 +231,20 @@
             </ul>
          </div>
       </div>
-      <!-- Contact Container -->
-      <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-         <div class="w3-row">
-            <div class="w3-col m5">
-               <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-               <h3>Address</h3>
-               <p>Swing by for a cup of coffee, or whatever.</p>
-               <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp; &nbsp; 101 York Centre, Office #119,</br>
-                  &nbsp; &nbsp; &nbsp; York Street, George, 6530
-               </p>
-               <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +27(0)794797828</p>
-               <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  jedwall@gmail.com</p>
-            </div>
-            <div class="w3-col m7">
-               <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-                  <div class="w3-section">      
-                     <label>Name</label>
-                     <input class="w3-input" type="text" name="Name" required>
-                  </div>
-                  <div class="w3-section">      
-                     <label>Email</label>
-                     <input class="w3-input" type="text" name="Email" required>
-                  </div>
-                  <div class="w3-section">      
-                     <label>Message</label>
-                     <input class="w3-input" type="text" name="Message" required>
-                  </div>
-                  <input class="w3-check" type="checkbox" checked name="Like">
-                  <label>I Like it!</label>
-                  <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-               </form>
-            </div>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+         <h4>Follow Us</h4>
+         <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/JedwallDesign/?ref=bookmarks" title="Facebook"><i class="fa fa-facebook"></i></a>
+         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+         <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+         <p>Powered by <a href="index.html">Jedwall Design</a></p>
+         <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+            <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span></a>
          </div>
-      </div>
-      <!-- Google Maps -->
-      <div id="googleMap" style="width:100%;height:420px;"></div>
-      <!--
-         To use this code on your website, get a free API key from Google.
-         Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-         -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAyQ9ck_iTzNggvxdUzpbi44QXxmWzmN0
-         &callback=myMap"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </footer>
+      <script src="heyScript.js"></script>
    </body>
-   <!-- Footer -->
-   <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-      <h4>Follow Us</h4>
-      <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/JedwallDesign/?ref=bookmarks" title="Facebook"><i class="fa fa-facebook"></i></a>
-      <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-      <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-      <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
-      <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-      <p>Powered by <a href="index.html">Jedwall Design</a></p>
-      <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-         <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-         <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-         <i class="fa fa-chevron-circle-up"></i></span></a>
-      </div>
-   </footer>

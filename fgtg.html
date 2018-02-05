@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Jedwall Design</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body id="myPage">
+      <!-- Navbar -->
+      <div class="w3-top">
+         <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Jedwall Design</a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Design & Clothing</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+               <button class="w3-button" title="Notifications">Extras <i class="fa fa-caret-down"></i></button>     
+               <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                  <a href="myart.html" class="w3-bar-item w3-button">My Art</a>
+                  <a href="vid&ani.html" class="w3-bar-item w3-button">Video & Animations</a>
+                  <a href="fgtg.html" class="w3-bar-item w3-button">FGTG</a>
+               </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+         </div>
+         <!-- Navbar on small screens -->
+         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team" class="w3-bar-item w3-button">Designs & Clothing</a>
+            <a href="#" class="w3-bar-item w3-button">Search</a>
+         </div>
+      </div>
+      <!-- Image Header -->
+      <div class="w3-display-container w3-animate-opacity">
+         <img src="images/backgrounds/fgtg2.jpg" alt="tree1" style="width:100%;min-height:350px;max-height:600px;">
+         <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+            <a href="index.html"><img src="images/backgrounds/jd5.png" style="width:80%;height:80%"></a>
+         </div>
+      </div>
+      <!-- FGTG Portfolio -->
+      <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h2>From Glory to Glory</h2>
+      <p>Prints & Merchandise to support the ministry of Jason Edwall.</p>
+      <div class="w3-row">
+         <br>
+         <div id="innerdiv">
+      <div class="row">
+         <div class="column">
+            <img src="images/fgtg_images/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <h3>#1</h3>
+            <p>Alien</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <h3>#2</h3>
+            <p>Seeed</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <h3>#3</h3>
+            <p>Fixin</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <h3>#4</h3>
+            <p>Water</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <h3>#5</h3>
+            <p>Bronze</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <h3>#6</h3>
+            <p>Aalien_Rain</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <h3>#7</h3>
+            <p>Vortex Zail</p>
+         </div>
+         <div class="column">
+            <img src="images/fgtg_images/8.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <h3>#8</h3>
+            <p>Visit Parallel</p>
+         </div>
+      </div>
+      <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <div class="modal-content">
+            <div class="mySlides">
+               <div class="numbertext">1 / 8</div>
+               <img src="images/fgtg_images/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">2 / 8</div>
+               <img src="images/fgtg_images/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">3 / 8</div>
+               <img src="images/fgtg_images/3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">4 / 8</div>
+               <img src="images/fgtg_images/4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">5 / 8</div>
+               <img src="images/fgtg_images/5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">6 / 8</div>
+               <img src="images/fgtg_images/6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">7 / 8</div>
+               <img src="images/fgtg_images/7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+               <div class="numbertext">8 / 8</div>
+               <img src="images/fgtg_images/8.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Alien">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Seeed">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fixin">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Water">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bronze">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Aalien_Rain">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Vortex Zail">
+            </div>
+            <div class="column">
+               <img class="demo cursor" src="images/fgtg_images/8.png" style="width:100%" onclick="currentSlide(8)" alt="Visit Parallel">
+            </div>
+         </div>
+      </div>
+      <div class="w3-center">
+         <p>Buy prints & Merchandise online at: www.fgtg.com</p>
+      </div>
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+         <h4>Follow Us</h4>
+         <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/JedwallDesign/?ref=bookmarks" title="Facebook"><i class="fa fa-facebook"></i></a>
+         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+         <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+         <p>Powered by <a href="index.html">Jedwall Design</a></p>
+         <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+            <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span></a>
+         </div>
+      </footer>
+      <script src="heyScript.js"></script>
+   </body>
