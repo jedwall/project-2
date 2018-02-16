@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <title>Jedwall Design</title>
       <meta charset="UTF-8">
@@ -240,11 +240,11 @@
                   </div>
                   <div class="w3-section">      
                      <label>Message</label>
-                     <input class="w3-input" type="text" name="Message" required>
+                     <input id="myText" class="w3-input" type="text" name="Message" required>
                   </div>
                   <input class="w3-check" type="checkbox" checked name="Like">
                   <label>I Like it!</label>
-                  <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                  <button onclick="sendMail(); return false" type="submit" class="w3-button w3-right w3-theme">Send</button>
                </form>
             </div>
          </div>
