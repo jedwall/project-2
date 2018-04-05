@@ -350,3 +350,101 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
         top: 0;
     }
     
+    .introfloat_in {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/in_bg.jpg");	
+     	 top: 13px; 
+         background-size: cover;
+     	 }
+    .introfloat_myart {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/ma_bg.jpg");	
+     	 top: 13px;
+         background-size: cover;
+     	}
+    .introfloat_va {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/va_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    .introfloat_fgtg {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/fgtg_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    .introfloat_op {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/op_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    .introfloat_ks {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/ks_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    .introfloat_jd {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/jd_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    .introfloat_ac {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/ac_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    .introfloat_od {
+    	 width: 100%; 
+    	 min-height:350px;
+     	 max-height:600px;
+    	 position: relative;
+    	 text-align: center;
+     	 background-image: url("images/backgrounds/od_bg.jpg");	
+     	 top: 13px; 
+     	 background-size: cover;
+     	}
+    #text1 {
+    	color: white;
+    	font-weight: bold;
+    	text-align: right;
+    	margin: 25px 200px 0px 200px;
+    	padding: 50px 50px 50px 50px;
+    	top: 100px;
+    	 }

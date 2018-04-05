@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
-   <header>
+<html lang="en">
+   <head>
       <title>Jedwall Design</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </header>
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   </head>
    <body id="myPage">
       <!-- Navbar -->
       <div class="w3-top">
@@ -27,15 +29,18 @@
          </div>
          <!-- Navbar on small screens -->
          <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team" class="w3-bar-item w3-button">Video & Animations/a>
+            <a href="#team" class="w3-bar-item w3-button">Video & Animations</a>
             <a href="#" class="w3-bar-item w3-button">Search</a>
          </div>
       </div>
       <!-- Image Header -->
       <div class="w3-display-container w3-animate-opacity">
-         <img src="images/backgrounds/va_bg1.jpg" alt="tree1" style="width:100%;min-height:350px;max-height:600px;">
+         <div class="introfloat_va">
+            <h1 id="text1">Video & </br>
+            Animation</h1>
+         </div>
          <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-            <a href="index.html"><img src="images/backgrounds/jd_logo.png" style="width:80%;height:80%"></a>
+            <a href="index.html"><img src="images/backgrounds/jd_logo.png" alt="JD_logo" style="width:80%;height:80%"></a>
          </div>
       </div>
       <!-- Vid & Animations Portfolio -->
@@ -45,30 +50,39 @@
       <div class="w3-row">
          <br>
          <div>
-            <div class="w3-quarter">
-               <img src="images/vid&ani_images/va_j.jpg" alt="Brochures" style="width:75%" class="w3-circle2 w3-hover-opacity w3-center">
-               <h3>Testimonies #1</h3>
-               <p>Testimony of a South African sharing her story.</p>
-            </div>
-            <div class="w3-quarter">
-               <img src="images/vid&ani_images/va_j.jpg" alt="Business Cards" style="width:75%" class="w3-circle2 w3-hover-opacity">
-               <h3>Matthew's Story</h3>
-               <p>Story of a local musician, connect with him:</p>
-            </div>
-            <div class="w3-quarter">
-               <img src="images/vid&ani_images/va_j.jpg" alt="Banquet Media" style="width:75%" class="w3-circle2 w3-hover-opacity">
-               <h3>Short clip for local business.</h3>
-               <p>A clip of a 3D design.</p>
-            </div>
-            <div class="w3-quarter">
+            <div>
                <iframe width="420" height="315" 
                   src="https://www.youtube.com/embed/QKyK78rrhJY"> 
                </iframe>
                <h3>Pen & ink short clip</h3>
                <p>Used Blender 3D to create this shorty.</p>
             </div>
+            <div>
+               <iframe width="420" height="315" 
+                  src="https://www.youtube.com/embed/QKyK78rrhJY"> 
+               </iframe>
+               <h3>Testimonies</h3>
+               <p>From a local Georgiette</p>
+            </div>
+            <div>
+               <iframe width="420" height="315" 
+                  src="https://www.youtube.com/embed/QKyK78rrhJY"> 
+               </iframe>
+               <h3>Matthew's Story</h3>
+               <p>Story of a local musician, connect with him:</p>
+            </div>
+            <div>
+               <iframe width="420" height="315" 
+                  src="https://www.youtube.com/embed/QKyK78rrhJY"> 
+               </iframe>
+               <h3>Short clip for local business.</h3>
+               <p>A clip of a 3D design.</p>
+            </div>
          </div>
       </div>
+   </div>
+            <script src="heyScript.js"></script>
+   </body>
       <!-- Footer -->
       <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
          <h4>Follow Us</h4>
@@ -78,11 +92,11 @@
          <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
          <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
          <p>Powered by <a href="index.html">Jedwall Design</a></p>
+         <p>+27 (0)79 479 7828 / jedwall@gmail.com </p>
          <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
             <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
             <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
             <i class="fa fa-chevron-circle-up"></i></span></a>
          </div>
       </footer>
-      <script src="heyScript.js"></script>
-   </body>
+</html>

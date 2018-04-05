@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <title>Jedwall Design</title>
       <meta charset="UTF-8">
@@ -11,6 +11,8 @@
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
    </head>
    <body id="myPage">
       <!-- Sidebar on click -->
@@ -29,87 +31,90 @@
          <div class="w3-bar w3-theme-d2 w3-left-align">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
             <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Jedwall Design</a>
-            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">KS</a>
+            <a href="#KS" class="w3-bar-item w3-button w3-hide-small w3-hover-white">KS</a>
             <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
             <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
             <div class="w3-dropdown-hover w3-hide-small">
                <button class="w3-button" title="Notifications">Extras <i class="fa fa-caret-down"></i></button>     
                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                  <a href="#" class="w3-bar-item w3-button">My Art</a>
-                  <a href="#" class="w3-bar-item w3-button">Video & Animations</a>
-                  <a href="#" class="w3-bar-item w3-button">FGTG</a>
+                  <a href="myart.html" class="w3-bar-item w3-button">My Art</a>
+                  <a href="vid&ani.html" class="w3-bar-item w3-button">Video & Animations</a>
+                  <a href="fgtg.html" class="w3-bar-item w3-button">FGTG</a>
                </div>
             </div>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
          </div>
          <!-- Navbar on small screens -->
          <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team" class="w3-bar-item w3-button">Team</a>
+            <a href="#KS" class="w3-bar-item w3-button">Team</a>
             <a href="#work" class="w3-bar-item w3-button">Work</a>
             <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
             <a href="#" class="w3-bar-item w3-button">Search</a>
          </div>
       </div>
       <!-- Image Header -->
       <div class="w3-display-container w3-animate-opacity">
-         <img src="images/backgrounds/ks_bg1.jpg" alt="ksbackground" style="width:100%;min-height:350px;max-height:600px;">
+         <div class="introfloat_ks">
+            <h1 id="text1">Koyi Security</h1>
+         </div>
          <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-            <a href="index.html"><img src="images/backgrounds/jd_logo.png" style="width:80%;height:80%"></a>
+            <a href="index.html"><img src="images/backgrounds/jd_logo.png" alt="JD_logo" style="width:80%;height:80%"></a>
          </div>
       </div>
       <!-- Portfolio -->
-      <div class="w3-container w3-padding-64 w3-center" id="team">
+      <div class="w3-container w3-padding-64 w3-center" id="KS">
          <h2>Koyi Security</h2>
          <p>See the work:</p>
+         <!-- Photos that links to viewport -->
          <div class="row">
             <div class="column">
-               <img src="images/ks_images/ks_cert1_sq.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+               <img src="images/ks_images/ks_cert1_sq.png" alt="KS_cert1" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                <h3>Certificates Designed</h3>
                <p>Designing of certificates for Koyi Security</p>
             </div>
             <div class="column">
-               <img src="images/ks_images/ks_cert2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+               <img src="images/ks_images/ks_cert2.jpg" alt="KS_cert2" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                <h3>Certificates Printed</h3>
                <p>We printed out the certificate on a few colored pages</p>
             </div>
             <div class="column">
-               <img src="images/ks_images/ks_logo1.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+               <img src="images/ks_images/ks_logo1.png" alt="KS_logo1" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                <h3>Logo Reconstruction</h3>
                <p>We cloned the logo to CorelDraw to use in other ways.</p>
             </div>
             <div class="column">
-               <img src="images/ks_images/ks_cert3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+               <img src="images/ks_images/ks_cert3.jpg" alt="KS_cert3" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                <h3>Invitations + Flyers</h3>
                <p>We specialize in keeping up-to-date with design trends!</p>
             </div>
          </div>
       </div>
+      <!-- Large photo in viewing mode -->
       <div id="myModal" class="modal">
          <span class="close cursor" onclick="closeModal()">&times;</span>
          <div class="modal-content">
             <div class="mySlides">
                <div class="numbertext">1 / 4</div>
-               <img src="images/ks_images/ks_cert1.png" style="width:100%">
+               <img src="images/ks_images/ks_cert1.png" alt="KS_cert1" style="width:100%">
             </div>
             <div class="mySlides">
                <div class="numbertext">2 / 4</div>
-               <img src="images/ks_images/ks_cert2.jpg" style="width:100%">
+               <img src="images/ks_images/ks_cert2.jpg" alt="KS_cert2" style="width:100%">
             </div>
             <div class="mySlides">
                <div class="numbertext">3 / 4</div>
-               <img src="images/ks_images/ks_logo1.png" style="width:100%">
+               <img src="images/ks_images/ks_logo1.png" alt="KS_logo1" style="width:100%">
             </div>
             <div class="mySlides">
                <div class="numbertext">4 / 4</div>
-               <img src="images/ks_images/ks_cert3.jpg" style="width:100%">
+               <img src="images/ks_images/ks_cert3.jpg" alt="KS_cert3" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             <div class="caption-container">
                <p id="caption"></p>
             </div>
+            <!-- photos under the viewport -->
             <div class="column">
                <img class="demo cursor" src="images/ks_images/ks_cert1.png" style="width:100%" onclick="currentSlide(1)" alt="Koyi Security Certificate Design">
             </div>
@@ -128,7 +133,7 @@
       <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
          <div class="w3-quarter">
             <h2>Our Work</h2>
-            <p>At Jedwall Design we are passionate about Graphic Design, SMM, Learning + applying code (Web building) + making solid business connections. We have had mainly 2 clients namely Options Care Centre and Koyi Security but we are always looking to grow our impact. We will soon be working with some local businesses namely Graffiti Web Design and totalfx. Stay posted to see updates...</p>
+            <p>At Jedwall Design we are passionate about Graphic Design, SMM, Learning + applying code (Web building) + making solid business connections. We have had mainly 2 clients namely Options Care Centre and Koyi Security but we are always looking to grow our impact. Stay posted to see new updates...</p>
          </div>
          <div class="w3-quarter">
             <div class="w3-card w3-white">
@@ -246,6 +251,7 @@
          <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
          <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
          <p>Powered by <a href="index.html">Jedwall Design</a></p>
+         <p>+27 (0)79 479 7828 / jedwall@gmail.com </p>
          <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
             <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
             <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">

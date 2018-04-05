@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
-   <header>
+<html lang="en">
+   <head>
       <title>Jedwall Design</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </header>
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   </head>
    <body id="myPage">
       <!-- Sidebar on click -->
       <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
@@ -50,62 +52,69 @@
       </div>
       <!-- Image Header -->
       <div class="w3-display-container w3-animate-opacity">
-         <img src="images/backgrounds/o_bg1.jpg" alt="tree1" style="width:100%;min-height:350px;max-height:600px;">
+         <div class="introfloat_op">
+            <h1 id="text1">Options</br>
+                           Care</br>
+                           Centre</h1>
+         </div>
          <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-            <a href="index.html"><img src="images/backgrounds/jd_logo.png" style="width:80%;height:80%"></a>
+            <a href="index.html"><img src="images/backgrounds/jd_logo.png" alt="JD_logo" style="width:80%;height:80%"></a>
          </div>
       </div>
       <!-- Options Care Center Portfolio -->
       <div class="w3-container w3-padding-64 w3-center" id="team">
          <h2>Options Care Centre</h2>
          <p>See the work:</p>
+         <!-- Photos that links to viewport -->
          <div class="row">
             <div class="column">
-               <img src="images/options_images/o_b.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+               <img src="images/options_images/o_b.jpg" alt="O_brochure" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                <h3>Brochure</h3>
                <p>This one was completed in 2017</p>
             </div>
             <div class="column">
-               <img src="images/options_images/o_bcard1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+               <img src="images/options_images/o_bcard1.jpg" alt="O_bcard" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                <h3>Business Cards</h3>
                <p>For Amacici Jewelery</p>
             </div>
             <div class="column">
-               <img src="images/options_images/o_bm.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+               <img src="images/options_images/o_bm.jpg" alt="O_Banquet Media" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                <h3>Banquet Media</h3>
                <p>Options every year needs new graphics for their banquet, which I provide.</p>
             </div>
             <div class="column">
-               <img src="images/options_images/o_p.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+               <img src="images/options_images/o_p.jpg" alt="O_Photography" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                <h3>Photography</h3>
                <p>A few different jobs, here and there.</p>
             </div>
          </div>
       </div>
+      <!-- Large photo in viewing mode -->
       <div id="myModal" class="modal">
          <span class="close cursor" onclick="closeModal()">&times;</span>
          <div class="modal-content">
             <div class="mySlides">
                <div class="numbertext">1 / 4</div>
-               <img src="images/options_images/o_b.jpg" style="width:100%">
+               <img src="images/options_images/o_b.jpg" alt="O_brochure" style="width:100%">
             </div>
             <div class="mySlides">
                <div class="numbertext">2 / 4</div>
-               <img src="images/options_images/o_bcard1.jpg" style="width:100%">
+               <img src="images/options_images/o_bcard1.jpg" alt="O_bcard" style="width:100%">
             </div>
             <div class="mySlides">
                <div class="numbertext">3 / 4</div>
-               <img src="images/options_images/o_bm.jpg" style="width:100%">
+               <img src="images/options_images/o_bm.jpg" alt="O_Banquet Media" style="width:100%">
             </div>
             <div class="mySlides">
                <div class="numbertext">4 / 4</div>
-               <img src="images/options_images/o_p.jpg" style="width:100%">
+               <img src="images/options_images/o_p.jpg" alt="O_Photography" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             <div class="caption-container">
                <p id="caption"></p>
             </div>
+            <!-- photos under the viewport -->
             <div class="column">
                <img class="demo cursor" src="images/options_images/o_b.jpg" style="width:100%; height:200px;" onclick="currentSlide(1)" alt="Options Brochure 2017">
             </div>
@@ -124,7 +133,7 @@
       <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
          <div class="w3-quarter">
             <h2>Our Work</h2>
-            <p>At Jedwall Design we are passionate about Graphic Design, SMM, Learning + applying code (Web building) + making solid business connections. We have had mainly 2 clients namely Options Care Centre and Koyi Security but we are always looking to grow our impact. We will soon be working with some local businesses namely Graffiti Web Design and totalfx. Stay posted to see updates...</p>
+            <p>At Jedwall Design we are passionate about Graphic Design, SMM, Learning + applying code (Web building) + making solid business connections. We have had mainly 2 clients namely Options Care Centre and Koyi Security but we are always looking to grow our impact. Stay posted to see new updates...</p>
          </div>
          <div class="w3-quarter">
             <div class="w3-card w3-white">
@@ -240,6 +249,7 @@
          <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
          <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
          <p>Powered by <a href="index.html">Jedwall Design</a></p>
+         <p>+27 (0)79 479 7828 / jedwall@gmail.com </p>
          <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
             <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
             <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
